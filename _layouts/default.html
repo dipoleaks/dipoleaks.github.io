@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id_ID">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<meta name="google-site-verification" content="nFPEoA8GyM1FjAewnD7wNOlwf_OfbGkC5xa3nVE2cJY">
+		<title>{{ page.title }} - Dedaligeni</title>
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="/css/main.css" rel="stylesheet" type="text/css">
+		<link href="/css/normalizecss.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet" type="text/css">
+		<link href="https://dipoleaks.github.io/atom.xml" rel="alternate" type="application/atom+xml" title="dipoLeaks - Atom">
+		{% assign canonical = page.url|remove:'index.html' %}<link rel="canonical" href="{{ site.url }}{{ canonical }}">
+		<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-71893949-41', 'auto');
+				ga('send', 'pageview');
+		</script>
+		<script type='text/javascript'>
+			function check_secure() {
+			var secssl = /^https/i;
+			var blog = document.location.hostname;
+			var slug = document.location.pathname;
+			var subs = window.location.search;
+			if (!window.location.origin.match(secssl)) {
+			window.location ="https://" + blog + slug + subs;
+			}
+			}
+			check_secure();
+		</script>
+	</head>
+	<body>
+		<nav>
+	    		<ul>
+	        		<li><a href="https://dipoleaks.github.io">Beranda</a></li>
+	    		</ul>
+		</nav>
+		<div class="container">
+			<div id="main-wrapper">{{ content }}</div><!-- main-wrapper -->
+			<aside id="sidebar-wrapper">
+				<h4>.:: Nuntiatum ::.</h4>
+				<div style="text-align:center;padding-top: 10px;">
+					<a href="http://kabarwan.dipopedia.com/2015/07/05-mau-belanja-hemat-di-zalora-ini-rahasianya.html" target="_blank" title="Mau Belanja Hemat Di Zalora? Ini Rahasianya!">Mau Belanja Hemat Di Zalora? Ini Rahasianya!<br /><img alt="Ilustrasi Menggunakan Voucher Zalora - Dedaligeni" src="https://dedaligeni.github.io/images/Dedaligeni-ContohMenggunakanKodeVoucherZBAPoct.gif" border="0" height="278" width="298" /></a>
+				</div>
+				<div class="clear"/>
+				<h4>.:: Pos Terbaru ::.</h4>
+				{% for post in site.posts limit:10 %}
+					<li style="padding-left:10px;list-style-type:none;"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" rel="bookmark" target="_blank">{{ post.title }}</a></li>
+				{% endfor %}
+				<div class="clear"/>
+			</aside><!-- sidebar-wrapper -->
+			<div class="clear"></div>	
+		</div><!-- /.container -->
+		<footer>
+	    		<ul>
+	        		<li>&copy; 2016 <a href="https://dipoleaks.github.io">Dedaligeni</a></li>        		
+			</ul>
+		</footer>
+	</body>
+</html>
