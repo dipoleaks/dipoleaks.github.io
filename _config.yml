@@ -1,0 +1,6 @@
+name: dipoLeaks
+markdown: kramdown
+permalink: /:year/:month/:day/:title.html
+excerpt_separator: <!--more-->
+paginate: 10
+url: https://dipoleaks.github.io
