@@ -1,0 +1,27 @@
+div.TabView div.Tabs{height: 24px;overflow: hidden;}
+div.TabView div.Tabs a {
+	float: left;
+	display: block;
+	width: 90px; /* Width top main menu */
+	text-align: center;
+	height: 24px; /* Height top main menu */
+	padding-top: 3px;
+	vertical-align: middle;
+	border: 1px solid #000; /* Top Main menu border color */
+	border-bottom-width: 0;
+	text-decoration: none;
+	font-family: "Times New Roman", Serif; /* Top main menu font */
+	font-weight: 900;
+	color: #000; /* Top main menu font color */
+}
+div.TabView div.Tabs a:hover, div.TabView div.Tabs a.Active {background-color: #FF9900; /* Top main menu background color */}
+div.TabView div.Pages {
+	clear: both;
+	border: 1px solid #6E6E6E; /* Content Border color */
+	overflow: hidden;
+	background-color: #f1f1f1; /* Content background color */
+}
+div.TabView div.Pages a {text-decoration: none;}
+div.TabView div.Pages div.Page{height: 100%;padding: 0px;overflow: hidden;}
+div.TabView div.Pages div.Page div.Pad{padding: 3px 5px;}
+div #creditfooter {display: none;}
