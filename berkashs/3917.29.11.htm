@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <script src="3917.29.11_files/google.js" style=""></script>        
+        <title>INTR | Indonesia National Trade Repository </title>
+        <link rel="shortcut icon" href="http://eservice.insw.go.id/img/icon/garuda.png">
+
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta charset="UTF-8">
+        <meta name="description" content="Admin Dashboard Template">
+        <meta name="keywords" content="admin,dashboard">
+        <meta name="author" content="Steelcoders">
+         
+        <link href="3917.29.11_files/css.css" rel="stylesheet" type="text/css">
+        <link href="3917.29.11_files/pace-theme-flash.css" rel="stylesheet">
+        <link href="3917.29.11_files/uniform.css" rel="stylesheet">
+        <link href="3917.29.11_files/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="3917.29.11_files/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="3917.29.11_files/waves.css" rel="stylesheet" type="text/css">	
+        <link href="3917.29.11_files/style.css" rel="stylesheet" type="text/css">
+        <link href="3917.29.11_files/component.css" rel="stylesheet" type="text/css">	
+        <link href="3917.29.11_files/weather-icons.css" rel="stylesheet" type="text/css">	
+        <link href="3917.29.11_files/MetroJs.css" rel="stylesheet" type="text/css">	        
+        <link href="3917.29.11_files/jquery_002.css" rel="stylesheet" type="text/css">	
+        <link href="3917.29.11_files/jquery.css" rel="stylesheet" type="text/css">	
+        <link href="3917.29.11_files/bootstrap-editable.css" rel="stylesheet" type="text/css">
+        <link href="3917.29.11_files/datepicker3.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="3917.29.11_files/pikaday.css">
+        <script type="text/javascript" src="3917.29.11_files/default.js"></script> 
+
+        <link href="3917.29.11_files/modern.css" rel="stylesheet" type="text/css">
+        <link href="3917.29.11_files/custom.css" rel="stylesheet" type="text/css">
+		
+		
+		<link rel="stylesheet" href="3917.29.11_files/owl.css">
+		<link rel="stylesheet" href="3917.29.11_files/owl_002.css">
+		
+
+        <script src="3917.29.11_files/modernizr.js"></script>		
+	
+    <style id="searchstatus-nofollow">a[rel~="nofollow"] {  outline: thin dashed firebrick ! important;  background-color: rgb(255, 200, 200) ! important; }</style><script type="text/javascript" charset="UTF-8" src="3917.29.11_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="3917.29.11_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="3917.29.11_files/stats.js"></script></head>
+    <body class="pace-done compact-menu page-horizontal-bar page-header-fixed page-sidebar-fixed">
+	
+
+    <main class="page-content content-wrap">
+        <div class="navbar" style="height: 80px; background-color: rgb(8, 14, 46); border-bottom: 3px solid #8B1A11;">
+            <div class="navbar-inner container">
+                <div class="sidebar-pusher">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="logo-box" style="height: 90px; margin-top: 7px; ">
+                    <a href="http://eservice.insw.go.id/index.html">
+                        <img src="3917.29.11_files/insw.png" data-sticky-height="40" data-sticky-width="200" alt="INSW" width="300" height="60">
+                    </a>
+                </div>
+
+                <div class="topmenu-outer">
+                    <div class="top-menu">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <h2 style="margin-top: 15px; font-size: 18px; color: white;">Indonesia National Trade Repository</h2>
+                                <h2 style="margin-top: -10px; font-size: 25px; text-align: right; color: orange;">INTR</h2>
+                            </li>
+							<li> <img style="margin-left: 5px;margin-top: 5px;" src="3917.29.11_files/intr-notitle.png" data-sticky-height="40" data-sticky-width="200" alt="INSW" width="70" height="65"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar horizontal-bar" style="padding-top: 75px;">
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+                <div class="page-sidebar-inner slimscroll">
+                    <ul class="menu accordion-menu" style="border-bottom: 16px none rgb(255, 165, 0); border-color: rgb(255, 165, 0); box-shadow: 1px 1px 3px 1px rgb(204, 204, 204);">						
+
+                        <li id="menu1" onclick="menu1();" style="border-right: 3px solid rgb(249, 249, 249);" class=""><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-home.php')"><span class="glyphicon glyphicon-home" style="margin-right: 5px;"></span><p>Home</p></a>
+                            
+                        </li>
+               
+                        <li id="menu2" onclick="menu2();" style="border-right: 3px solid rgb(249, 249, 249);" class="droplink menu2 active"><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-indonesia-ntr.php')"><span class="glyphicon glyphicon-book" style="margin-right: 5px;"></span><p style="font-size: 14px;">Indonesia NTR</p><span class="arrow"></span></a>
+                            <ul class="sub-menu">
+                                <li><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-hs-code.php')">HS Code Information</a></li>
+                                <li><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-lartas.php')">Lartas Information</a></li>   
+								<li><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-lst-ga.php')">Regulation Repository</a></li>
+								<li><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-lst-RoO.php')">Rules Of Origin</a></li>
+								<li><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-authorized-traders.php')">List of Authorized Traders</a></li>
+                            </ul>
+                        </li>     
+						<li id="menu3" onclick="menu3();" style="border-right: 3px solid rgb(249, 249, 249);" class="droplink"><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-tradesimulator.php')"><span class="glyphicon glyphicon-th" style="margin-right: 5px;"></span><p style="font-size: 14px;">Trade Simulation</p><span class="arrow"></span></a>
+                        </li>
+						<li id="menu4" onclick="menu4();" style="border-right: 3px solid rgb(249, 249, 249);" class="droplink"><a style="cursor:pointer;" onclick="open_url('')"><span class="glyphicon glyphicon-list-alt" style="margin-right: 5px;"></span><p style="font-size: 14px;">Manifest Information</p><span class="arrow"></span></a>
+                        </li>
+						<li id="menu5" onclick="menu5();" style="border-right: 3px solid rgb(249, 249, 249);" class="droplink"><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-exchange-rate.php')"><span class="glyphicon glyphicon-barcode" style="margin-right: 5px;"></span><p style="font-size: 14px;">Exchange Rate</p><span class="arrow"></span></a>
+                        </li>
+                        <li id="menu6" onclick="menu6();" style="border-right: 3px solid rgb(249, 249, 249);" class="droplink"><a style="cursor:pointer;" onclick="open_url('tpl/table/tbl-qa.php')"><span class="glyphicon glyphicon-envelope" style="margin-right: 5px;"></span><p style="font-size: 14px;"> F  A  Q</p><span class="arrow"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+
+
+        <div id="content-main-main" align="left"><div class="page-inner">
+    <div id="main-wrapper" class="container">
+        <div class="row m-t-md">
+
+            <div class="col-md-12">
+                <div class="panel panel-success">
+                    <div class="panel panel-white">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><b>HARMONIZED SYSTEM (HS) INFORMATION </b></h4>
+							<div class="panel-control">
+								<a id="b2s" onclick="b_search()" style="cursor: pointer; display: block;">|Back To Search Result|</a>
+							</div>
+                        </div>
+                       
+                        <div class="panel-body" style="margin-top: 20px;min-height: 200px;">
+                            <form id="frm_src_hs_code" name="frm_src_hs_code" class="form-horizontal">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="input-Default" class="col-sm-1 control-label" style="text-align: left;">PARAMETER</label>		
+                                        <div class="col-sm-3">
+                                            <select id="src_by" name="src_by" class="form-control m-b-sm">
+                                                <option value="hs" selected="selected">HS Code</option>
+                                                <option value="id">BTBMI - Description In Indonesian</option>
+                                                <option value="en">BTBMI - Desctiption In English</option>
+                                                <option value="li">Lartas Impor Description</option>
+                                                <option value="le">Lartas Ekspor Description</option>
+                                            </select>
+                                        </div>
+                                        <label for="input-Default" class="col-sm-2 control-label" style="text-align: left;">KEY WORDS</label>
+                                        <div class="col-sm-3">
+                                            <input class="form-control" id="src_txt" name="src_txt" maxlength="25" value="39172911" type="text">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="submit" class="btn btn-info">SEARCH</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div style="padding-top:10px;" id="tbl-hs-code-content"> 		<input id="hs_code" name="hs_code" value="39172911" type="hidden">
+		
+		<div class="row">
+			<div class="panel-heading clearfix" style="background:white;">
+				<h4 class="panel-title"><b>DETAIL HS 3917.29.11</b></h4>
+			</div>
+			
+			<div>
+				<h5><i>The information contained in this website is for general 
+information purposes only. The information is provided by PP INSW and 
+while we endeavour to keep the information up to date and correct, we 
+make no representations or warranties of any kind, express or implied, 
+about the completeness, accuracy, reliability, suitability or 
+availability with respect to the website or the information, products, 
+services, or related graphics contained on the website for any purpose. 
+Any reliance you place on such information is therefore strictly at your
+ own risk. Please contact the respective government agency for further 
+detail information of the related regulation.</i></h5>				
+			</div>
+			<div class="panel-heading clearfix" style="margin-top: 20px;">
+				<h4 class="panel-title"><b>BTKI</b></h4>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th></th>
+								<th></th>
+								<th>Indonesia</th>
+								<th>English</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="width: 10%;">Bagian</td>
+								<td>VII</td>
+								<td>PLASTIK DAN BARANG DARI PLASTIK; KARET DAN BARANG DARI KARET</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Bab</td>
+								<td>39</td>
+								<td>PLASTIK DAN BARANG DARI PLASTIK</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>39.17</td>
+								<td>Pembuluh, pipa dan selang, serta alat kelengkapan dari padanya (misalnya, penyambung pipa, elbow, flensa), dari plastik.</td>
+								<td>Tubes, pipes and hoses, and fittings therefor (for example, joints, elbows, flanges), of plastics.</td>
+							</tr>
+							<tr>
+								<td>Pos Tarif</td>
+								<td>3917.29.11</td>
+								<td>- - - - Dari produk polimerisasi adisi lainnya</td>
+								<td>- - - - Of other addition polymerisation products</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="panel-footer">
+			</div>
+			
+			<div class="panel-heading clearfix" style="margin-top: 20px;">
+				<h4 class="panel-title"><b>MFN (Most Favoured Nation)</b></h4>
+			</div>
+			<div class="panel-body">
+				 <div class="table-responsive">		  
+					<table class="table table-striped">
+					  <thead>
+						<tr>
+							<th>NAME</th>
+							<th>REGULATION</th>											
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr><td style="padding: 10px ! important;"><table>
+																<tbody><tr>
+																	<td style="padding: 10px ! important;">BM</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;">15</td>
+																</tr><tr>
+																</tr><tr>
+																	<td style="padding: 10px ! important;">PPN</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;">10</td>
+																</tr><tr>
+																</tr><tr>
+																	<td style="padding: 10px ! important;">PPh</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;"></td>
+																</tr><tr>
+																</tr><tr>
+																	<td style="padding: 10px ! important;">PPNBM</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;"></td>
+																</tr><tr>
+																</tr><tr>
+																	<td style="padding: 10px ! important;">CUKAI</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;"></td>
+																</tr><tr>
+															 </tr></tbody></table>
+										</td><td style="padding: 10px ! important;"><table>
+																<tbody><tr>
+																	<td style="padding: 10px ! important;">Number</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;">6/PMK.010/2017</td>
+																</tr><tr>
+																</tr><tr>
+																	<td style="padding: 10px ! important;">Date</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;">26-01-2017</td>
+																</tr><tr>
+																</tr><tr>
+																	<td style="padding: 10px ! important;">Effective Date</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;">01-03-2017</td>
+																</tr><tr>
+																</tr><tr>
+																	<td style="padding: 10px ! important;">Note</td>
+																	<td style="padding: 10px ! important;">:</td>
+																	<td style="padding: 10px ! important;"></td>
+																</tr><tr>
+															 </tr></tbody></table>
+										</td></tr>					  </tbody>
+					</table>
+				</div>
+			
+			
+				<div class="panel-body" style="margin-top: -40px;">
+					<h4>Note :</h4><h4>
+<!--					<table class="table table-striped">
+						<tr>
+							<td>>></td>
+							<td>Tarif with 999 value are specific value. They are detailed in the regulation / legal roled the tarif. Please see the related regulation or legal for details. <br>
+					If you want to ask for tarif details. please feel free to contact Customs Officers at phone number +6221 - 1500225.</td>
+						</tr>
+						<tr>
+							<td>>></td>
+							<td>The information contained in this website is for general information purposes only. The information is provided by PP INSW and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. Please contact the respective government agency for further detail information of the related regulation .</td>
+						</tr>
+					</table>
+-->					
+					<p><i>Tarif with 999 value are specific value. They are detailed in
+ the regulation / legal roled the tarif. Please see the related 
+regulation or legal for details. <br>
+					If you want to ask for tarif details. please feel free to contact Customs Officers at phone number +6221 - 1500225.</i>
+					</p>					
+				</h4></div>
+			</div>
+			<div class="panel-footer" style="margin-top: -20px;">
+			</div>
+			
+			<div class="panel-heading clearfix" style="margin-top: 20px;">
+				<h4 class="panel-title"><b>PREFERENTIAL TARIFF</b></h4>
+			</div>
+			<div class="panel-body">
+				 <div class="table-responsive">		  
+					<table class="table table-striped">
+					  <thead>
+						<tr>
+							<th>NO</th>
+							<th>PREFERENCE</th>
+							<th>TARIF</th>
+							<th>REGULATION</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						
+								<tr><td>1</td><td>ATIGA (ASEAN Trade in Goods Agreement)</td><td>Tahun 2017 : 0</td><td>NO SKEP	 : 25/PMK.010/2017<br>TGL SKEP	 :2017-02-27<br>BERLAKU	 :2017-03-01</td></tr><tr><td>2</td><td>ACFTA (ASEAN - China Free Trade Area)</td><td>Tahun 2017 : 20</td><td>NO SKEP	 : 26/PMK.010/2017<br>TGL SKEP	 :2017-02-27<br>BERLAKU	 :2017-03-01</td></tr><tr><td>3</td><td>IJEPA (Indonesia - Japan Economic Partnership Agreement)</td><td>Tahun 2017 : 1.82</td><td>NO SKEP	 : 30/PMK.010/2017
+<br>TGL SKEP	 :2017-02-27<br>BERLAKU	 :2017-03-01</td></tr><tr><td>4</td><td>AKFTA (ASEAN Korea Free Trade Agreement)</td><td>Tahun 2017 : 5</td><td>NO SKEP	 : 24/PMK.010/2017
+<br>TGL SKEP	 :2017-02-27<br>BERLAKU	 :2017-03-01</td></tr><tr><td>5</td><td>AIFTA (ASEAN India Free Trade Agreement)</td><td>Tahun 2017 : 5</td><td>NO SKEP	 : 27/PMK.010/2017
+<br>TGL SKEP	 :2017-02-27<br>BERLAKU	 :2017-03-01</td></tr><tr><td>7</td><td>AANZFTA (ASEAN Australia New Zealand Free Trade Agreement)</td><td>Tahun 2017 : 17</td><td>NO SKEP	 : 28/PMK.010/2017
+<br>TGL SKEP	 :2017-02-27<br>BERLAKU	 :2017-03-01</td></tr>							
+						</tbody><tbody>
+					
+					</tbody></table>
+				</div>
+			</div>
+			<div class="panel-footer">
+			</div>
+			
+			<div class="panel-heading clearfix" style="margin-top: 20px;">
+				<h4 class="panel-title"><b>IMPORT REGULATION (LARTAS IMPOR)</b></h4>
+			</div>
+				<div style="padding-top:10px;" id="tbl-hs-detail-content">  <input id="val_selected_tbl-hs-detail" name="val_selected_tbl-hs-detail" type="hidden">
+                        <input id="val_selected_num_tbl-hs-detail" name="val_selected_num_tbl-hs-detail" type="hidden">                       
+                        <table style="margin-bottom:-10px; margin-right:-10px;" class="table" width="95%">
+                            <tbody><tr>
+                                <td style="padding-left:25px;" width="70%" align="left">
+                                    
+                                </td>
+                                <td width="30%" align="right">         </td>
+                            </tr>
+                       </tbody></table> <div class="table-responsive">
+						<table class="table table-striped" id="tbl-hs-detail" width="100%" cellspacing="0">
+						<thead style="background-color: #F1F1F1;">
+                        <tr><td><p style="margin-left: 0px;">Tidak ada data <b>IMPORT REGULATION (LARTAS IMPOR)</b></p></td></tr></thead><tbody></tbody></table></div></div>
+			<div class="panel-footer" style="margin-top: 20px;">
+			</div>
+
+			<div class="panel-heading clearfix" style="margin-top: 20px;">
+				<h4 class="panel-title"><b>EXPORT REGULATION (LARTAS EKSPOR)</b></h4>
+			</div>
+				<div style="padding-top:10px;" id="tbl-hs-detail-ekspor-content">  <input id="val_selected_tbl-hs-detail-ekspor" name="val_selected_tbl-hs-detail-ekspor" type="hidden">
+                        <input id="val_selected_num_tbl-hs-detail-ekspor" name="val_selected_num_tbl-hs-detail-ekspor" type="hidden">                       
+                        <table style="margin-bottom:-10px; margin-right:-10px;" class="table" width="95%">
+                            <tbody><tr>
+                                <td style="padding-left:25px;" width="70%" align="left">
+                                    
+                                </td>
+                                <td width="30%" align="right">         </td>
+                            </tr>
+                       </tbody></table> <div class="table-responsive">
+						<table class="table table-striped" id="tbl-hs-detail-ekspor" width="100%" cellspacing="0">
+						<thead style="background-color: #F1F1F1;">
+                        <tr><td><p style="margin-left: 0px;">Tidak ada data <b>EXPORT REGULATION (LARTAS EKSPOR)</b></p></td></tr></thead><tbody></tbody></table></div></div>
+			<div class="panel-footer" style="margin-top: 20px;">
+			</div>
+		</div>
+		
+<script>       
+	var param = $("#hs_code").val();
+	var idx = '39172911';
+	$("#tbl-hs-detail-content").load('mod/tbl/tbl-hs-code-detail-impor.php?id='+param+'&idx='+idx);
+	$("#tbl-hs-detail-ekspor-content").load('mod/tbl/tbl-hs-code-detail-ekspor.php?id='+param+'&idx='+idx);
+	
+	
+function warning(){
+$("body" ).append('<div id="compose-modal-warning" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">'+
+					'<div class="modal-dialog modal-sm" style="width: 450px;">'+
+						'<div class="modal-content">'+
+							'<div class="modal-header" style="padding: 15px;height: 50px;background: red; color: white;">'+
+								'<button type="button" onclick="close_modal(\'warning\')"  class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+								'<h4 class="modal-title" id="mySmallModalLabel">INTR</h4>'+
+							'</div>'+
+							'<div class="modal-body">'+
+								 '<div style="margin-top: 30px; margin-bottom: 11px; font-size: 16px;">Maaf, Data tidak Ditemukan</div>'+
+							'</div>'+
+							'<div class="modal-footer">'+
+							'	<button type="button" onclick="close_modal(\'warning\')"  class="btn btn-success" data-dismiss="modal">TUTUP</button>'+
+							'</div>'+
+						'</div>'+
+					'</div>'+
+						'<a id="open_large_msg" data-toggle="modal" data-target="#compose-modal-warning"></a>'+
+				'</div>');
+$('#open_large_msg').click();    
+}
+
+</script>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#b2s').hide();
+	
+	if( '' != ""){
+		var id = '';
+		$("#tbl-hs-code-content").load('tpl/table/tbl-detail.php?id='+id);
+	}
+	
+	
+    $('#frm_src_hs_code').submit(function() {
+        var hs_code = $('#src_txt').val();
+        if (hs_code != "") {            
+            var param = $(this).serialize();
+            $("#tbl-hs-code-content").load('mod/tbl/tbl-hs-code.php?' + param);
+            return false;
+        } else {            
+            $("#tbl-hs-code-content").load('tpl/table/nodata.php?kat=' + 'hs');
+            return false;
+        }
+    });
+
+    function open_detil(url, hs, div) {        
+        hs_code = hs.replace('.', '');
+        hs_l = hs_code.length;       
+        if (hs_l > 4) {            
+            $('#b2s').show();
+            $("#" + div).html('<div style="padding: 50px 0px 50px 0px; width:100%;" align="center"><img src="img/content/loading-bar.gif" width="20" style="margin-bottom:-3px;"/></div>');
+            $("#" + div).load(url);
+        } else {
+            return false;
+        }
+
+    }
+
+    function b_search() {
+        var param = $('#frm_src_hs_code').serialize();
+        $('#b2s').hide();
+        $("#tbl-hs-code-content").load('mod/tbl/tbl-hs-code.php?' + param);
+
+    }
+</script></div>
+		
+	
+	
+
+
+	<footer style="padding:20px;background: #F9F9F9 none repeat scroll 0% 0%; color: white;margin-bottom: 40px;">
+		<div class="container">
+			<div class="row center">
+				<div class="owl-carousel owl-theme owl-loaded">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				<div class="owl-stage-outer owl-height" style="height: 73px;"><div class="owl-stage" style="width: 4560px; transform: translate3d(-2850px, 0px, 0px); transition: all 0.25s ease 0s;"><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/menko.png" alt="" data-original-title="Ministry of Energy and Mineral Resources">
+					</div></div><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/djbc.png" alt="" data-original-title="Directorate General of Customs and Excise">
+					</div></div><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/bpom.png" alt="" data-original-title="The National Agency of Drug and Food Control">
+					</div></div><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/kemendag.png" alt="" data-original-title="Ministry of Trade">
+					</div></div><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/kemenkes.png" alt="" data-original-title="Ministry of Healths">
+					</div></div><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/bapeten.png" alt="" data-original-title="Nuclear Energy Regulatory Agency" style="opacity: 1;">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive test" src="3917.29.11_files/esdm.png" alt="" data-original-title="Ministry of Energy and Mineral Resources">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/barantan.png" alt="" data-original-title="Indonesia Agriculture Quarantine Agency">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/menlh.png" alt="" data-original-title="Ministry of Forestry">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/kemenperin.png" alt="" data-original-title="Ministry of Industry">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/menhan.png" alt="" data-original-title="Ministry of Defense">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/polri.png" alt="" data-original-title="Police of Republic of Indonesia">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/menko.png" alt="" data-original-title="Ministry of Energy and Mineral Resources">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/djbc.png" alt="" data-original-title="Directorate General of Customs and Excise">
+					</div></div><div class="owl-item" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/bpom.png" alt="" data-original-title="The National Agency of Drug and Food Control">
+					</div></div><div class="owl-item active" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/kemendag.png" alt="" data-original-title="Ministry of Trade">
+					</div></div><div class="owl-item active" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/kemenkes.png" alt="" data-original-title="Ministry of Healths">
+					</div></div><div class="owl-item active" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/bapeten.png" alt="" data-original-title="Nuclear Energy Regulatory Agency" style="opacity: 1;">
+					</div></div><div class="owl-item cloned active" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive test" src="3917.29.11_files/esdm.png" alt="" data-original-title="Ministry of Energy and Mineral Resources">
+					</div></div><div class="owl-item cloned active" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/barantan.png" alt="" data-original-title="Indonesia Agriculture Quarantine Agency">
+					</div></div><div class="owl-item cloned active" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/menlh.png" alt="" data-original-title="Ministry of Forestry">
+					</div></div><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/kemenperin.png" alt="" data-original-title="Ministry of Industry">
+					</div></div><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/menhan.png" alt="" data-original-title="Ministry of Defense">
+					</div></div><div class="owl-item cloned" style="margin-right: 10px;"><div>
+						<img data-toggle="tooltip" title="" class="img-responsive" src="3917.29.11_files/polri.png" alt="" data-original-title="Police of Republic of Indonesia">
+					</div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div style="display: none;" class="owl-dots"></div></div></div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	
+	
+	<div class="page-footer" style="background: rgb(8, 14, 46) none repeat scroll 0% 0%; color: white;">
+        <div class="container">
+            <div class="col-md-10">
+				<p style="line-height: 5px;margin-top: 9px;">Copyright © 2007 - 2017 Pengelola Portal Indonesia National Single Window.</p>
+            </div>
+			<div class="col-md-2">
+				<a style="cursor:pointer; color: white; text-decoration:none;" onclick="open_url('tpl/table/tbl-home.php')">Home</a>&nbsp;
+				<a style="cursor:pointer; color: white; text-decoration:none;" onclick="open_url('tpl/table/tbl-about.php')">About</a>&nbsp;
+				<a style="cursor:pointer; color: white; text-decoration:none;" onclick="open_url('tpl/table/tbl-features.php')">Features</a>
+            </div>
+                               
+        </div>
+    </div>
+
+
+
+</main>
+
+
+<script src="3917.29.11_files/jquery-2.js"></script>
+<script src="3917.29.11_files/jquery-ui.js"></script>
+<script src="3917.29.11_files/waves.js"></script>
+<script src="3917.29.11_files/modern.js"></script>
+
+        <script src="3917.29.11_files/jquery_010.js"></script>
+        <script src="3917.29.11_files/jquery_011.js"></script>
+        <script src="3917.29.11_files/switchery.js"></script>
+        <script src="3917.29.11_files/jquery_009.js"></script>
+        <script src="3917.29.11_files/classie.js"></script>
+        <script src="3917.29.11_files/main.js"></script>
+        <script src="3917.29.11_files/jquery_004.js"></script>
+        <script src="3917.29.11_files/jquery_007.js"></script>
+        <script src="3917.29.11_files/toastr.js"></script>
+        <script src="3917.29.11_files/jquery_006.js"></script>
+        <script src="3917.29.11_files/jquery.js"></script>
+        <script src="3917.29.11_files/jquery_002.js"></script>
+        <script src="3917.29.11_files/jquery_008.js"></script>
+        <script src="3917.29.11_files/jquery_005.js"></script>
+        <script src="3917.29.11_files/curvedLines.js"></script>
+        <script src="3917.29.11_files/MetroJs.js"></script>
+        <script src="3917.29.11_files/dashboard.js"></script>
+
+
+<script src="3917.29.11_files/jquery_003.js"></script>
+<script src="3917.29.11_files/bootstrap.js"></script>
+<script src="3917.29.11_files/owl.js"></script>
+<script type="text/javascript" src="3917.29.11_files/pikaday.js"></script> 
+
+
+
+
+
+<script>    
+	function menu1(){
+		$("#menu2").removeClass( "menu2 active" );
+		$("#menu3").removeClass( "menu3 active" );
+		$("#menu4").removeClass( "menu4 active" );
+		$("#menu5").removeClass( "menu5 active" );
+		$("#menu6").removeClass( "menu6 active" );
+		$("#menu1").addClass( "menu1 active" );
+		
+	}
+	
+	function menu2(){
+		$("#menu1").removeClass( "menu1 active" );
+		$("#menu3").removeClass( "menu3 active" );
+		$("#menu4").removeClass( "menu4 active" );
+		$("#menu5").removeClass( "menu5 active" );
+		$("#menu6").removeClass( "menu6 active" );
+		$("#menu2").addClass( "menu2 active" );
+		
+	}
+	function menu3(){
+		$("#menu1").removeClass( "menu1 active" );
+		$("#menu2").removeClass( "menu2 active" );
+		$("#menu4").removeClass( "menu4 active" );
+		$("#menu5").removeClass( "menu5 active" );
+		$("#menu6").removeClass( "menu6 active" );
+		$("#menu3").addClass( "menu3 active" );
+		
+	}
+	function menu4(){
+		$("#menu1").removeClass( "menu1 active" );
+		$("#menu2").removeClass( "menu2 active" );
+		$("#menu3").removeClass( "menu3 active" );
+		$("#menu5").removeClass( "menu5 active" );
+		$("#menu6").removeClass( "menu6 active" );
+		$("#menu4").addClass( "menu4 active" );
+		
+	}
+	function menu5(){
+		$("#menu1").removeClass( "menu1 active" );
+		$("#menu2").removeClass( "menu2 active" );
+		$("#menu3").removeClass( "menu3 active" );
+		$("#menu4").removeClass( "menu4 active" );
+		$("#menu6").removeClass( "menu6 active" );
+		$("#menu5").addClass( "menu5 active" );
+		
+	}
+	function menu6(){
+		$("#menu1").removeClass( "menu1 active" );
+		$("#menu2").removeClass( "menu2 active" );
+		$("#menu3").removeClass( "menu3 active" );
+		$("#menu4").removeClass( "menu4 active" );
+		$("#menu5").removeClass( "menu5 active" );
+		$("#menu6").addClass( "menu6 active" );
+		
+	}
+
+
+$(document).ready(function(){
+		
+		 $('[data-toggle="tooltip"]').tooltip(); 
+		
+		  $(".owl-carousel").owlCarousel({
+				items:6,
+				loop:true,
+				margin:10,
+				autoWidth:true,
+				autoHeight:true,
+				autoplay:true,
+				autoplayTimeout:3000,
+				dots: false,
+				centerClass: "center",
+				animateIn: true,
+				autoplayHoverPause:true			
+		  });					  
+		});        
+	   $("#content-main-main").load('tpl/table/tbl-home.php');
+	   
+	
+</script>
+</body></html>
